@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beach Life Journey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Poppins', sans-serif;
+            color:white;
+            overflow-x:hidden;
+            background: linear-gradient(to bottom, #00c6ff, #0072ff);
+        }
+
+        /* 🌊 WAVES ANIMATION */
+        .wave{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 200%;
+            height: 150px;
+            background: url('https://svgshare.com/i/13uA.svg') repeat-x;
+            background-size: contain;
+            animation: waveMove 10s linear infinite;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .wave2{
+            animation: waveMove 15s linear infinite reverse;
+            opacity: 0.3;
+            height: 180px;
+        }
+
+        @keyframes waveMove{
+            from{ transform: translateX(0); }
+            to{ transform: translateX(-50%); }
+        }
+
+        header{
+            background: rgba(0,0,0,0.3);
+            padding:20px;
+            text-align:center;
+            backdrop-filter: blur(5px);
+            position: sticky;
+            top:0;
+        }
+
+        header h1{
+            font-family:'Pacifico', cursive;
+            font-size:40px;
+            letter-spacing:2px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffd700;
+        }
+
+        section{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        section h2{
+            font-size:35px;
+            margin-bottom:30px;
+            font-family:'Pacifico', cursive;
+        }
+
+        .box{
+            background: rgba(255,255,255,0.15);
+            margin:20px auto;
+            padding:20px;
+            max-width:800px;
+            border-radius:20px;
+            backdrop-filter: blur(10px);
+            box-shadow:0 8px 20px rgba(0,0,0,0.3);
+            transition:0.4s;
+        }
+
+        .box:hover{
+            transform:translateY(-5px);
+        }
+
+        .box h3{
+            margin-bottom:10px;
+            color:#ffd700;
+        }
+
+        img{
+            width:80%;
+            max-width:500px;
+            border-radius:20px;
+            margin-top:20px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        footer{
+            background: rgba(0,0,0,0.4);
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+            header h1{
+                font-size:28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Animated Waves -->
+<div class="wave"></div>
+<div class="wave wave2"></div>
+
+<header>
+    <h1>🌊 Cerojano 🌊</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#educational">Educational</a>
+        <a href="#journey">Journey</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home">
+    <h2>Home</h2>
+    <img src="p.jpeg" alt="Beach Image">
+
+    <div class="box">
+        <h3>Welcome to My Educational Journey</h3>
+        <p>Welcome to my personal website where I share my educational experiences and goals. This space represents my growth as a student and as a person.</p>
+    </div>
+
+    <div class="box">
+        <h3>Purpose of This Website</h3>
+        <p>This website shows my dedication to learning and improving myself every day. Here you will discover my academic background and future dreams.</p>
+    </div>
+
+    <div class="box">
+        <h3>My Inspiration</h3>
+        <p>I am inspired to study hard so I can achieve success in the future. Education is my foundation for building a better life.</p>
+    </div>
+</section>
+    </div>
+</section>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <img src="p.jpeg" alt="Beach Person">
+
+    <div class="box">
+        <h3>My Academic Identity</h3>
+        <p>I am a student who values education as an important part of my life. Learning new lessons helps me improve my knowledge and skills every day.</p>
+    </div>
+
+    <div class="box">
+        <h3>My Learning Attitude</h3>
+        <p>I stay focused in school because I know it will shape my future. I always try my best to understand every lesson given to me.</p>
+    </div>
+
+    <div class="box">
+        <h3>My Educational Goals</h3>
+        <p>My goal is to finish my studies successfully and make my family proud. I believe education is the key to achieving my dreams in life.</p>
+    </div>
+</section>
+    </div>
+</section>
+
+<!-- EDUCATIONAL -->
+<section id="educational">
+    <h2>Educational</h2>
+
+    <div class="box">
+        <h3>Academic Growth</h3>
+        <p>My education is an important part of who I am becoming. Every subject I study helps me understand the world better.</p>
+    </div>
+
+    <div class="box">
+        <h3>School Life</h3>
+        <p>In school, I meet teachers who guide me and friends who support me. Each school day teaches me lessons beyond books.</p>
+    </div>
+
+    <div class="box">
+        <h3>Future Preparation</h3>
+        <p>I study hard because I want to build a strong future. Education is the bridge that connects my dreams to reality.</p>
+    </div>
+</section>
+    </div>
+</section>
+<!-- JOURNEY -->
+<section id="journey">
+    <h2>Journey</h2>
+
+    <div class="box">
+        <h3>Personal Path</h3>
+        <p>My journey is filled with experiences that shape my character. Every step I take teaches me something valuable.</p>
+    </div>
+
+    <div class="box">
+        <h3>Overcoming Obstacles</h3>
+        <p>I face challenges with courage and determination. Difficult moments help me grow stronger and wiser.</p>
+    </div>
+
+    <div class="box">
+        <h3>Dream Destination</h3>
+        <p>I continue moving forward toward my goals in life. One day I will look back proudly at how far I have come.</p>
+    </div>
+</section>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Beach Life Journey | Designed with 🌊 vibes</p>
+</footer>
+
+</body>
+</html>
